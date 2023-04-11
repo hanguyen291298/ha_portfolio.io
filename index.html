@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-egde">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ha Nguyen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&family=Vast+Shadow&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ed157d744.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" class="logo">
+          <ul id="sidemenu">
+            <li> <a href="#about">About</a> </li>
+            <li> <a href="#services">Process</a> </li>
+            <li> <a href="#portfolio">Portfolio</a> </li>
+            <li> <a href="#contact">Contact</a> </li>
+            <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-sharp fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Fresher/Data analyst</p>
+          <h1>Hi! I'm <span>Ha.</span><br>Welcome to my site!</h1>
+        </div>
+      </div>
+    </div>
+      <!-- ------------------about-------------------------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/avatar.jpg" alt="my picture">
+        <a href="#services" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;">SCROLL FOR MORE</a>
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">Introduction</h1>
+        <p>I am a newbie in the field of data science and currently do not have any direct experience in the field. However, I am highly motivated to learn and gain experience in this field. I am eager to apply my knowledge and skills to real-world problems and make a positive impact. I am a quick learner and am willing to put in the time and effort to become proficient in data science. I am excited about the opportunity to work in data science and am open to any opportunity that allows me to gain experience and improve my skills.</p>
+        <div class="tab-title">
+          <p class="tab-link active-link" onclick="opentab('skill')">Skills set</p>
+          <p class="tab-link" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-content active-tab" id="skill">
+          <ul>
+            <li><span>Python</span><br>Good understanding of the built-in data types. In particular, lists, dictionaries, tuples and sets.<br>Using Pandas, Numpy to manipulate, extract and clean data.<br>Using Matplotlib and Seaborn to data visualization.<br>Using requests, beautifulsoup, selenium to web scraping</li>
+            <li><span>SQL</span><br>Writing and executing SQL queries.<br>Joining tables.<br>Filtering and sorting data.<br>Aggregating data.<br>Using subqueries, Window function</li>
+            <li><span>Tableau, Powerbi</span><br>Creating dashboards and reports.</li>
+            <li><span>Excel</span><br>organizing, manipulating, and analyzing data.<br>Data cleaning and formatting<br>Data visualization</li>
+            <li><span>Basic R</span></li>
+          </ul>
+        </div>
+        <div class="tab-content" id="education">
+          <ul>
+            <li>
+              <span>Graduation</span>
+              <ul>
+                <li>From:  Nong Lam Universty.</li>
+                <li>GPA: 7.2/10</li>
+              </ul>
+            </li>
+            <li>
+              <span>Certification</span>
+              <ul class="link-education">
+                <li><a href="https://coursera.org/share/334ff92579caab2846762729cd8f1d17">Google Data Analytics Professional Certificate.</a></li>
+                <li><a href="https://www.hackerrank.com/certificates/05cf02acea9c">Python(Basic) Certificate from HackeRank</a></li>
+                <li><a href="https://www.hackerrank.com/certificates/58880bb6f0f3">SQL(Basic) Certificate from HackeRank</a></li>
+                <li><a href="https://www.hackerrank.com/certificates/78c00842834a">SQL(Intermediate) Certificate from HackeRank</a></li>
+                <li><a href="https://www.hackerrank.com/certificates/711f9a8c6151">SQL(Advanced) Certificate from HackeRank</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- -----------------------process--------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">What could I do?</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h2>Data analyzing</h2>
+          <p>Collecting data, processing data, analyzing data to answer questions of stackholders</p>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-chart-pie"></i>
+          <h2>Data Visualization</h2>
+          <p>Making dashboards and reports</p>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-code"></i>
+          <h2>Web Scraping</h2>
+          <p>Getting data, necessary information from websites</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bw-rihgt w-slider-arrow-left" role="button" tabindex="0" aria-controls="w-slider-mask-0" aria-label="previous slide" style=""><div class="icon w-icon-slider-left"></div></div>
+  <!-- ------------------------------Portfolio--------------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work1.jpg">
+          <div class="layer">
+            <h3>Analyzing data using SQL</h3>
+            <p>Querries, extract insights to answer questions from stackholders</p>
+            <a href="https://github.com/hanguyen291298/SQL_exploration_portfolio_project/blob/d6291477d9c62e08d3a4931d1fd5788c7fd0b935/Hotel%20Reservation_Portfolio%20Project.sql"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work2.jpg" >
+          <div class="layer">
+            <h3>Exploratory and Data Visualization using Python</h3>
+            <p>Loading data, cleaning data using pandas and Matplotlib, Seaborn for data visualization</p>
+            <a href="https://github.com/hanguyen291298/data_analysic_project/blob/4bf416ae74a655939ef20183680a505d60216391/sale_exploratory_python.ipynb"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work3.jpg" >
+          <div class="layer">
+            <h3>Making dashboards using Tableau</h3>
+            <p>Creating new columns, analyzing data and data visualization</p>
+            <a href="https://public.tableau.com/app/profile/hanguyen98"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="projects.html" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- -------------------------------contact------------------------------ -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <h4>Are you interested in the world of data?<br>Do you want to share your knowledge to me? Don't be hesitate!</h4>
+          <p><i class="fa-sharp fa-regular fa-envelope"></i><a href="mailto: thuyha291298@gmail.com">Send email</a></p>
+          <p><i class="fa-solid fa-square-phone"></i> 0394836655</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100006423132725"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/h%C3%A0-nguy%E1%BB%85n-9b802b196/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/hanguyen291298"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="images/my_cv.pdf" download class="btn btn2">Get My CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <label>Name</label><br>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <label>Email address</label><br>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <label>Message</label><br>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">LET'S TALK !</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2023 Ha Nguyen</p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var tablink=document.getElementsByClassName("tab-link");
+    var tabcontent=document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+      for(tabl of tablink){
+        tabl.classList.remove("active-link");
+      }
+      for(tabc of tabcontent){
+        tabc.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script type="text/javascript">
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-150px";
+    }
+  </script>
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwbFZ-wKOrpC71H8-JC1t6K80M-_CetMg0EifwC8lRpNsMgFTLRid3fTQ9gAkZAW71LVw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const mag = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
